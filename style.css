@@ -1,0 +1,45 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color:blue;
+    display: inline-block;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 5px;
+    background: lavender;
+    transition: all .5s
+}
+li a:hover::after{
+    width:100%;
+}
+main{
+    display: flex;
+    border: 1px solid black;
+    height:fit-content
+}
+.parent{
+    margin:10px;
+    box-sizing: border-box;
+    display:flex;
+}
+.parent .item{
+    border: 1px solid #ddd
+    width:30vw;
+    height:25;
+}
