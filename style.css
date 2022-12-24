@@ -8,5 +8,16 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+body {
+    padding-top: 56px;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+    
 
  
