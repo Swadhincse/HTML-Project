@@ -1,9 +1,16 @@
+
+*{
+  min-width: 100;
+  margin: 10;
+}
 nav {
-  z-index: 99;
   position: relative;
+  z-index: 80;
+
 }
 nav a {
   text-decoration: none;
+  
 }
 nav.container {
   padding: 1em 2em;
@@ -128,11 +135,11 @@ section
 }
 
 .about-image {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
 }
 
 .about-text {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   padding: 0 20px;
 }
 
@@ -143,11 +150,11 @@ section
 }
 
 .about-image {
-  width: 30%;
+  width: 60%;
 }
 
 .about-text {
-  width: 70%;
+  width: 40%;
 }
 @media (max-width: 600px) {
   .about-us {
@@ -197,6 +204,7 @@ section
 #contact-form {
   display: flex;
   flex-direction: column;
+  background-color: rgb(240, 179, 179);
 }
 
 .form-row {
