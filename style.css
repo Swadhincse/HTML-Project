@@ -74,19 +74,22 @@ nav ul li a {
     flex-direction: column;
   }
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-h1 {
-  animation-name: fadeIn;
-  animation-duration: 10s;
-}
 
+h1 {
+  animation: myAnimation 5s ease-in-out infinite;
+
+}
+@keyframes myAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 header .logo {
   position: relative;
   max-width: 100px;
